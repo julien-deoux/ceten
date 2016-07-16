@@ -32,7 +32,8 @@
 \usepackage{graphicx} 
 \usepackage{titlesec} 
 \usepackage{ifxetex} 
-\usepackage[usenames, dvipsnames]{xcolor} 
+\usepackage[usenames]{xcolor} 
+\definecolor{newCeten}{RGB}{130,11,95}
 
 \ifxetex
 	\usepackage{fontspec} 
@@ -42,9 +43,9 @@
 	\newfontfamily\condensed{Roboto Condensed}
 	\newfontfamily\condensedlight{Roboto Condensed Light}
 	\newfontfamily\light{Roboto Slab Light}
-	\titleformat*{\section}{\LARGE\condensed\color{Plum}}
-	\titleformat*{\subsection}{\Large\condensedlight\color{Plum}}
-	\titleformat*{\subsubsection}{\large\condensedlight\color{Plum}}
+	\titleformat*{\section}{\LARGE\condensed\color{newCeten}}
+	\titleformat*{\subsection}{\Large\condensedlight\color{newCeten}}
+	\titleformat*{\subsubsection}{\large\condensedlight\color{newCeten}}
 \else
 	\usepackage[utf8]{inputenc} 
 	\usepackage[T1]{fontenc} 
@@ -52,7 +53,7 @@
 
 \title{Statuts du Ceten}
 \author{Philippe Becker\\
-	K1ilian Cuny\\
+	Kilian Cuny\\
 	Julien Déoux\\
 	Yoni Lévy} 
 \date\today
