@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                     %
+%                    Template de documents Ceten                      %
+%                                                                Beta %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Auteur :
+%    Julien Déoux <julien.deoux@telecomnancy.net>
+%  Licence :
+%    CC-BY-NC 4.0 (http://creativecommons.org/licenses/by-nc/4.0
+%
+%%%
+
+%%%%%%%%%%%%%%%%%%%
+%  Configuration  %
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article} % Jusqu'à preuve du contraire, les documents édités par le Ceten ne font pas 300 pages
+\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+\usepackage[francais]{babel} 
+
+\usepackage{graphicx} 
+\usepackage{titlesec} 
+\usepackage{ifxetex} 
+\usepackage[usenames, dvipsnames]{xcolor} 
+\definecolor{newCeten}{RGB}{130,11,95}
+
+\ifxetex
+	\usepackage{fontspec} 
+	\setmainfont{Roboto Slab}
+	\setsansfont{Roboto}
+	\setmonofont{Roboto Mono}
+	\newfontfamily\condensed{Roboto Condensed}
+	\newfontfamily\condensedlight{Roboto Condensed Light}
+	\newfontfamily\light{Roboto Slab Light}
+	\titleformat*{\section}{\LARGE\condensed\color{newCeten}}
+	\titleformat*{\subsection}{\Large\condensedlight\color{newCeten}}
+	\titleformat*{\subsubsection}{\large\condensedlight\color{newCeten}}
+\else
+	\usepackage[utf8]{inputenc} 
+	\usepackage[T1]{fontenc} 
+\fi
+
+\title{Document Ceten générique} % À remplacer
+\author{Julien Déoux} % Idem
+\date\today
+
+%%%%%%%%%%%%%%
+%  Document  %
+%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\pagenumbering{gobble}
+
+	%---------------%
+	% Page de garde %
+	%---------------%
+	
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=\textwidth]{images/ceten.png}\par
+			\vspace{3cm}
+			{\Huge \light Document Ceten générique}\par
+			\vfill
+			{\large Cercle des Élèves de TELECOM Nancy}\par
+			{\large \light Association déclarée}
+			\vfill
+			{\light \today}\par
+		\end{center}
+	\end{titlepage}
+
+	%----------%
+	% Articles %
+	%----------%
+
+	\section*{Article Premier}
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+	\section*{Article 2}
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+	\section*{Article 3}
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\end{document}

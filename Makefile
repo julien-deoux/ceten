@@ -1,5 +1,5 @@
 template:
-	xelatex ceten.tex
+	xelatex template.tex
 
 statuts:
 	xelatex statuts.tex
