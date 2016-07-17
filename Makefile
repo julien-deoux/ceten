@@ -1,5 +1,4 @@
-template:
-	xelatex template.tex
+all: statuts ri
 
 statuts:
 	xelatex statuts.tex
@@ -11,5 +10,5 @@ charte:
 	xelatex charte.tex
 
 clean:
-	rm *.aux *.log *.toc
+	rm *.aux *.log *.toc *.out
 
