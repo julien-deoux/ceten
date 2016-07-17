@@ -11,5 +11,5 @@ charte:
 	xelatex charte.tex
 
 clean:
-	rm *.aux *.log 
+	rm *.aux *.log *.toc
 
