@@ -26,6 +26,7 @@
 \usepackage{ifxetex} 
 \usepackage[usenames]{xcolor} 
 \definecolor{newCeten}{RGB}{130,11,95}
+\usepackage{multicol}
 
 \ifxetex
 	\usepackage{fontspec} 
@@ -868,16 +869,20 @@
 		l'association par affichage et courrier électronique sous un délai de 7
 		jours suivant la date de la modification.
 
-
+    \vfill
 	\begin{center}
 		{\large\light Le présent règlement intérieur a été voté lors de la réunion
 		du Bureau Des Élèves à Villers-lès-Nancy le 01 février 2016}
 	\end{center}
+	\vfill
 	Signatures\par
-	\vspace{0.5cm}
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccc}
-		Président & Trésorier & Secrétaire
-	\end{tabular*}
+	\begin{multicols}{3}
+	    \begin{center}
+	        Président \\
+	        Trésorier \\
+	        Secrétaire
+	    \end{center}
+	\end{multicols}
 	\vspace{3cm}
 	\clearpage
 

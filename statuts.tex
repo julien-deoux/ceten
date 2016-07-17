@@ -32,6 +32,7 @@
 \usepackage{ifxetex} 
 \usepackage[usenames]{xcolor} 
 \definecolor{newCeten}{RGB}{130,11,95}
+\usepackage{multicol}
 
 \ifxetex
 	\usepackage{fontspec} 
@@ -536,11 +537,14 @@
 		Extraordinaire à Villers-lès-Nancy le 22 Janvier 2013.}
 	\end{center}
 	\vfill
-		Signatures\par
-	\vspace{0.5cm}
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccc}
-		Président & Trésorier & Secrétaire
-	\end{tabular*}
-	\vspace{3cm}
-
+	Signatures\par
+	\begin{multicols}{3}
+	    \begin{center}
+	        Président \\
+	        Trésorier \\
+	        Secrétaire
+	    \end{center}
+	\end{multicols}
+    \vspace{3cm}
+    
 \end{document}
