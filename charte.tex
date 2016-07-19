@@ -33,6 +33,7 @@
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 \usepackage{multicol}
+\usepackage{setspace}
 
 \ifxetex
 	\usepackage{fontspec} 
@@ -58,8 +59,6 @@
 
 \begin{document}
 
-	\pagenumbering{roman}
-
 	%---------------%
 	% Page de garde %
 	%---------------%
@@ -67,9 +66,9 @@
 	\begin{titlepage}
 		\begin{center}
 			\includegraphics[width=\textwidth]{images/ceten.png}\par
-			\vspace{1.5cm}
+			\vspace{0.5cm}
 			{\Huge \light Charte des clubs}\par
-			\vspace{1.5cm}
+			\vspace{1cm}
 		\end{center}
 		\begin{center}
 			Club : \underline{\hspace{8cm}}
@@ -79,42 +78,38 @@
 			\hspace{3cm}
 			$\square$ Renouvellement du bureau du club\\
 			~\\
-			Président du club : \underline{\hspace{7cm}}\\
-			Trésorier du club : \underline{\hspace{7cm}}\\
-			Secrétaire du club : \underline{\hspace{7cm}}\\
-			Référent de TELECOM Nancy : \underline{\hspace{7cm}}\\
+			\begin{spacing}{1.5}
+				Président du club : \underline{\hspace{7cm}}\\
+				Trésorier du club : \underline{\hspace{7cm}}\\
+				Secrétaire du club : \underline{\hspace{7cm}}\\
+				Référent de TELECOM Nancy : \underline{\hspace{7cm}}\\
+			\end{spacing}
 		\end{center}
 		Type du club :
 		\begin{todolist}
-			\item Club de services
-			\item Club de loisirs
-			\item Club évènementiel (Mois de passation :
-				\underline{\hspace{5cm}})
+		\item Club de services
+		\item Club de loisirs
+		\item Club évènementiel (Mois de passation :
+			\underline{\hspace{5cm}})
 		\end{todolist}
 		~\\
 		Objet du club :\\
-		\underline{\hspace{\textwidth}}
-		\underline{\hspace{\textwidth}}
-		\underline{\hspace{\textwidth}}
-		\underline{\hspace{\textwidth}}
-		\underline{\hspace{\textwidth}}
- 
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+
 		\vfill
 		\begin{center}
-			{\light Ce texte régit le fonctionnement, les obligations et les
+			{\footnotesize \light Ce texte régit le fonctionnement, les obligations et les
 			droits attribués aux différents Clubs composant le CETEN, comme
 			définis dans les statuts. Un exemplaire est remis au président du
 			club, l’autre est archivé au sein du BDE. \\
 			Charte modifiée et votée le 12/03/2013 par le BDE du CETEN}
 		\end{center}
 	\end{titlepage}
-
-	%--------------------%
-	% Table des matières %
-	%--------------------%
-	
-	\tableofcontents
-	\clearpage
 
 	%----------%
 	% Articles %
