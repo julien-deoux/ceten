@@ -1,13 +1,16 @@
 all: statuts ri
 
 statuts:
-	xelatex statuts.tex
+	xelatex statuts
+	xelatex statuts
 
 ri:
-	xelatex ri.tex
+	xelatex ri
+	xelatex ri
 
 charte:
-	xelatex charte.tex
+	xelatex charte
+	xelatex charte
 
 clean:
 	rm *.aux *.log *.toc *.out
