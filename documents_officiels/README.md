@@ -1,4 +1,3 @@
-# ceten
 Documents officiels du Ceten : Statuts, règlement intérieur et chartes des clubs
 
 ## Contributors
