@@ -1,15 +1,15 @@
-all: statuts ri
+all: statuts ri charte charteBar
 
 statuts:
-	xelatex statuts
 	xelatex statuts
 
 ri:
 	xelatex ri
-	xelatex ri
+
+charteBar:
+	xelatex charteBar
 
 charte:
-	xelatex charte
 	xelatex charte
 
 clean:
