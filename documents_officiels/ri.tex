@@ -30,21 +30,16 @@
 \widowpenalties 1 10000
 \raggedbottom
 
-\ifxetex
-	\usepackage{fontspec} 
-	\setmainfont{Roboto Slab}
-	\setsansfont{Roboto}
-	\setmonofont{Roboto Mono}
-	\newfontfamily\condensed{Roboto Condensed}
-	\newfontfamily\condensedlight{Roboto Condensed Light}
-	\newfontfamily\light{Roboto Slab Light}
-	\titleformat*{\section}{\LARGE\condensed\color{newCeten}}
-	\titleformat*{\subsection}{\Large\condensedlight\color{newCeten}}
-	\titleformat*{\subsubsection}{\large\condensedlight\color{newCeten}}
-\else
-	\usepackage[utf8]{inputenc} 
-	\usepackage[T1]{fontenc} 
-\fi
+\usepackage{fontspec} 
+\setmainfont{Roboto Slab}
+\setsansfont{Roboto}
+\setmonofont{Roboto Mono}
+\newfontfamily\condensed{Roboto Condensed}
+\newfontfamily\condensedlight{Roboto Condensed Light}
+\newfontfamily\light{Roboto Slab Light}
+\titleformat*{\section}{\LARGE\condensed\color{newCeten}}
+\titleformat*{\subsection}{\Large\condensedlight\color{newCeten}}
+\titleformat*{\subsubsection}{\large\condensedlight\color{newCeten}}
 
 \title{Règlement intérieur}
 \author{Philippe Becker \\
@@ -471,10 +466,9 @@
 				conditions d’éligibilité.
 
 				Les candidats devront se présenter au sein de listes composées
-				selon les modalités de l’article 10.4.5 des
-				statuts de l’association. Une
-				liste incomplète pourra être déposée. Chaque candidat ne peut
-				appartenir qu’à une seule liste.
+				selon les modalités de l’article 10.4.5 des statuts de
+				l’association. Une liste incomplète pourra être déposée. Chaque
+				candidat ne peut appartenir qu’à une seule liste.
 
 				Une semaine avant la campagne, les présidents de chaque liste
 				doivent déclarer leur liste auprès du président de l’association
@@ -592,6 +586,7 @@
 			produites qui pourront faire l'objet de vérifications.
 
 	\section{Les Clubs}
+\label{sec:clubs}
 
 		Chaque club est une entité interne à l’association, composée uniquement de
 		membres actifs et dédiée à un but ou une activité particulière, spécifié lors
@@ -605,7 +600,8 @@
 		charte.
 
 	\section{Utilisation des locaux de la zone élève}
-		
+\label{sec:locaux_est}
+
 		\subsection{Général}
 
 			\subsubsection{Lien avec la Charte de mise à disposition des locaux}
@@ -667,9 +663,9 @@
 
 				Afin de transmettre à l’administration le taux d’occupation de
 				l’école le plus précis possible, chaque président de club doit
-				notifier l’utilisation qu’il fait des salles une fois par dans
-				un rapport d'activité qu'il fera parvenir  à la directrice des
-				études de TELECOM Nancy et au Bureau Des Élèves.
+				notifier l’utilisation qu’il fait des salles une fois par an
+				dans un rapport d'activité qu'il fera parvenir à la directrice
+				des études de TELECOM Nancy et au Bureau Des Élèves.
 
 		\subsection{Le rez-de-chaussée}
 		
@@ -793,6 +789,7 @@
 				président.
 
 	\section{Utilisation des locaux hors zone élève}
+\label{sec:locaux_nonest}
 
 		\subsection{L’aile Sud-Ouest}
 
@@ -823,15 +820,17 @@
 			affiches dans l’Atrium mais seulement au rez-de-chaussée.
 
 	\section{Modification du règlement intérieur}
+\label{sec:modif}
 
 		Le règlement intérieur de l’association Cercle des Élèves de TELECOM
 		Nancy est établi par le Bureau Des Élèves, conformément à l'article 11
 		des statuts. Il peut être modifié par le Bureau Des Élèves, sur
 		proposition d’un membre de l’association ou d’un membre du Bureau.
 
-		Dans le cas des articles 4 et 5 du règlement intérieur, il peut être
-		modifié par le Bureau Des Élèves en accord avec le Directeur de TELECOM
-		Nancy, sur proposition d’un membre de l’association ou dudit Directeur.
+		Dans le cas des articles~\ref{sec:locaux_est} et~\ref{sec:locaux_nonest}
+		du règlement intérieur, il peut être modifié par le Bureau Des Élèves en
+		accord avec le Directeur de TELECOM Nancy, sur proposition d’un membre
+		de l’association ou dudit Directeur.
 
 		La modification se déroule selon la procédure suivante : \\
 		Un membre de l’association ou un membre du bureau peut proposer une
@@ -839,12 +838,13 @@
 		Élèves qui délibérera de la pertinence de ce changement. Si la majorité
 		absolue du bureau vote pour la modification du règlement, celle-ci est
 		validée. \\
-		Dans le cas des articles 4 et 5 du règlement intérieur, un membre de
-		l’association, le directeur de TELECOM Nancy ou un membre du bureau
-		peut proposer une modification au présent règlement lors d’une réunion
-		du Bureau Des Élèves qui délibérera sur la pertinence de ce changement.
-		Si la majorité absolue du bureau et le directeur de TELECOM Nancy
-		votent pour la modification du règlement, celle-ci est validée. 
+		Dans le cas des articles~\ref{sec:locaux_est} et~\ref{sec:locaux_nonest}
+		du règlement intérieur, un membre de l’association, le directeur de
+		TELECOM Nancy ou un membre du bureau peut proposer une modification au
+		présent règlement lors d’une réunion du Bureau Des Élèves qui délibérera
+		sur la pertinence de ce changement. Si la majorité absolue du bureau et
+		le directeur de TELECOM Nancy votent pour la modification du règlement,
+		celle-ci est validée.
 
 		Le nouveau règlement intérieur sera adressé à chacun des membres de
 		l'association par affichage et courrier électronique sous un délai de 7
@@ -871,12 +871,12 @@
 		
 		Il est composé pour l’année 2016 de M. Guillaume HABEN (Président), M.
 		Philippe BECKER (Vice-Président), M. Kilian CUNY (Trésorier), M.
-		Frédéric GEORGES (Vice-Trésorier), M. Yoni LÉVY (Secrétaire), M. Julien
+		Frédéric GEORGES (Vice-Trésorier), M. Yoni LEVY (Secrétaire), M. Julien
 		DÉOUX (Responsable des Clubs), M. Gauthier DEMANGEON (Responsable
 		Informatique), M. Léo JOUËT-PASTRÉ (Responsable Logistique), M. Youri
 		KOROSTELEV (Responsable Communication), M. Victor CHOLLEY-BARROYER
-		(Responsable Communication), M. Marc PLATINI (Responsable des Troisième
-		Année) et M. Thomas DENIS (Responsable des Apprentis).
+		(Responsable Communication) et M. Marc PLATINI (Responsable des
+		Troisième Année).
 
 	\section*{Liste des responsables des espaces}
 
