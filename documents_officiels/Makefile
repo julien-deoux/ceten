@@ -1,13 +1,14 @@
-all: statuts ri charte charteBar
+all: statuts ri charte charteTemp
 
 statuts:
+	xelatex statuts
 	xelatex statuts
 
 ri:
 	xelatex ri
 
-charteBar:
-	xelatex charteBar
+charteTemp:
+	xelatex charteTemp
 
 charte:
 	xelatex charte
