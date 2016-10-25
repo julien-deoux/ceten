@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                     %
 %                        Charte des clubs                             %
-%                                                                Beta %
+%                                                                     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Auteur :
@@ -18,8 +18,7 @@
 %  Configuration  %
 %%%%%%%%%%%%%%%%%%%
 
-\documentclass{article} % Jusqu'à preuve du contraire, les documents édités par le
-                                                     % Ceten ne font pas 300 pages
+\documentclass{article}
 \usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
 \usepackage[francais]{babel}
 
@@ -34,20 +33,17 @@
 \setlist[todolist]{label=$\square$}
 \usepackage{multicol}
 \usepackage{setspace}
+% \widowpenalties1 10000
+% \raggedbottom{}
 
-\ifxetex{}
-	\usepackage{fontspec} 
-	\setmainfont{Roboto Slab}
-	\setsansfont{Roboto}
-	\setmonofont{Roboto Mono}
-	\newfontfamily\condensed{Roboto Condensed}
-	\newfontfamily\condensedlight{Roboto Condensed Light}
-	\newfontfamily\light{Roboto Slab Light}
-	\titleformat*{\section}{\large\condensedlight\color{newCeten}}
-\else
-	\usepackage[utf8]{inputenc} 
-	\usepackage[T1]{fontenc} 
-\fi
+\usepackage{fontspec} 
+\setmainfont{Roboto Slab}
+\setsansfont{Roboto}
+\setmonofont{Roboto Mono}
+\newfontfamily\condensed{Roboto Condensed}
+\newfontfamily\condensedlight{Roboto Condensed Light}
+\newfontfamily\light{Roboto Slab Light}
+\titleformat*{\section}{\large\condensedlight\color{newCeten}}
 
 \title{Charte des clubs}
 \author{Julien Déoux}
@@ -103,11 +99,13 @@
 
 		\vfill
 		\begin{center}
-			{\footnotesize \light{} Ce texte régit le fonctionnement, les obligations et les
-			droits attribués aux différents clubs composant le Ceten, comme
-			définis dans les statuts. Un exemplaire est remis au président du
-			club, l’autre est archivé au sein du BDE\@. \\
-			Charte modifiée et votée le 12/03/2013 par le BDE du Ceten}
+			{\footnotesize \light{} Ce texte régit le fonctionnement, les
+			obligations et les droits attribués aux différents clubs composant
+			le Ceten, comme définis dans le règlement intérieur. Un exemplaire
+			est remis au président du club, l’autre est archivé au sein du
+			BDE\@.\\
+			Charte modifiée et votée le lundi 7 novembre 2016 par le BDE du
+			Ceten}
 		\end{center}
 	\end{titlepage}
 
@@ -120,17 +118,18 @@
 	\begin{multicols}{2}
 		
 		\section{Définition}
+\label{sec:definition}
 			
 		{\small
 			
 			Un «club» est une entité interne au Ceten, composée de membres et
 			dédiée à un but ou une activité particulière. Le fonctionnement et
-			les engagements pris par le club sont détaillés dans cette Charte
+			les engagements pris par ce club sont détaillés dans cette Charte
 			des clubs. L’objet spécifique du club est défini au début de cette
 			charte.
 
-			Un club n’a existence que par signature de cette présente charte par
-			le Responsable des clubs du BDE, la personne référent de TELECOM
+			L'existence de ce club est subordonnée à la signature de la présente
+			charte par le responsable des clubs du BDE, le référent de TELECOM
 			Nancy et par les président, trésorier et secrétaire du club.
 
 			Faisant partie intégrante de l’association, toutes les règles et
@@ -139,6 +138,7 @@
 			}
 
 		\section{Type}
+\label{sec:type}
 			
 		{\small
 		
@@ -156,53 +156,68 @@
 			notifié au début de la charte.
 			
 		}
-		
-		\section{Durée}
-		
-		{\small
-			
-			Un club existe jusqu’à la fin de l’année civile spécifiée au début
-			de la charte, ou jusqu’à dernier jour du mois de passation défini au
-			début de la charte pour les clubs de type évènementiel. Cette durée
-			est reconductible par renouvellement du club via cette charte.
-
-			Un membre du club l’est jusqu’à la fin du mandat du bureau du club.
-			% À voir
-			
-		}
 
 		\section{Composition}
-		
+\label{sec:composition}
+
 		{\small
 		
-			Un club est composé de membres qui doivent être également membres du
-			Ceten. Un club se compose au minimum de trois personnes distinctes
-			qui sont:
+			Un club est composé de membres qui doivent également être membres
+			adhérents du Ceten. Ce club se compose au minimum de trois personnes
+			distinctes qui sont:
 			\begin{itemize}
-				\item le président du club, responsable de celui-ci
-				\item le trésorier, chargé de tenir régulièrement une
-					comptabilité précise du club
-				\item le secrétaire, chargé de rédiger les comptes rendus des 
-					réunions tenues par le club.
-					% Suivi de la liste des membres
+				\item le président, dont le rôle est défini en
+					Section~\ref{sec:presidence}
+				\item le trésorier, dont le rôle est défini en
+					Section~\ref{sec:tresorerie}
+				\item le secrétaire, dont le rôle est défini en
+					Section~\ref{sec:secretariat}
 			\end{itemize}
-			Ces trois personnes déterminent le «bureau restreint» du club, qui a
-			pour fonction de gérer l’ensemble du club. Le club n’a lieu
-			d’exister sans la présence de ces trois personnes. La structure
-			interne du club est laissée libre au Bureau.
 
-			% Bureau étendu
-			Tous les membres du club devront au préalable avoir fait
-			l’inscription à celui-ci via le formulaire fourni en Annexe 1, qui
-			sera transmis au responsable clubs du BDE\@.
-			% À voir
-			Chaque bureau de club doit tenir une liste à jour des membres de son
-			club et transmettre au BDE tout changement dans sa structure
-			interne.
-			
+			Ces trois personnes déterminent le «bureau restreint» du club, qui a
+			pour fonction de gérer l'ensemble du club. Le club n'a lieu
+			d'exister sans la présence de ces six personnes.
+
+			La structure interne du club et laissée libre au bureau restreint.
+			En particulier, il peut désigner un «bureau complémentaire» dont le
+			rôle est d'aider le bureau restreint à assurer ses fonctions, et
+			dont la constitution doit être immédiatement transmise au
+			responsable des clubs du BDE\@.
+
+			L'ensemble de ces deux bureaux constitue le «bureau étendu» du club.
+			Dans la suite de cette charte, l'appellation «bureau» désigne le
+			bureau étendu du club.
+
+			Le bureau du club doit tenir une liste à jour de ses membres et la
+			laisser à disposition du BDE à tout moment.
+
 		}
-		
+
+		\section{Durée}
+\label{sec:duree}
+
+		{\small
+			
+			La présente charte n'est valable que pendant la durée du mandat du
+			bureau du club.
+
+			Dans le cas d'un club évènementiel, le mandat du bureau commence le
+			1\up{er} du mois suivant celui spécifié au début de la charte et
+			s'achève un an plus tard, sauf en cas de réélection d'un ou
+			plusieurs membres du bureau restreint du club.
+
+			Dans les autres cas, un mandat du bureau commence au 1\up{er}
+			janvier et se termine au 31 décembre de l'année spécifiée au début
+			de la charte, sauf en cas de réélection d'un ou plusieurs membres du
+			bureau restreint du club.
+
+			Un membre du club l'est de la date de son inscription jusqu'au
+			1\up{er} septembre suivant.
+
+		}
+
 		\section{Création}
+\label{sec:creation}
 		
 		{\small
 		
@@ -216,6 +231,7 @@
 		}
 
 		\section{Activité au sein du club}
+\label{sec:activite}
 		
 		{\small
 		
@@ -228,26 +244,27 @@
 			du raisonnable, le club à réaliser ses activités, par un 
 			financement, du matériel, des formations et un suivi.
 
-			Pour s’assurer que le club exerce correctement son activité, un
-			compte-rendu d’activités est demandé par le BDE tous les mois.
+			Pour s’assurer que le club exerce correctement son activité, le BDE
+			peut convoquer le club pour une de ses réunions hebdomadaires ou lui
+			demander un compte-rendu d’activités à tout moment.
 			
 		}
 
-		\section{Déroulement des réunions}
+		\section{Prise de décisions}
+\label{sec:decisions}
 		
 		{\small
 		
 			En période scolaire, chaque club doit se réunir à un minimum d’une
-			fois par mois sur convocation du président ou à la demande du tiers
-			de ses membres. Pour les clubs de type événementiel, deux mois avant
-			l’évènement, cette période est réduite à une fois tous les quinze
-			jours.  
+			fois tous les deux mois sur convocation du président ou à la demande
+			du tiers de ses membres. Pour les clubs de type événementiel, deux
+			mois avant l’évènement, cette période est réduite à une fois tous
+			les quinze jours.
 
-			Seuls les membres du club peuvent assister aux réunions. Le bureau
-			du club se réserve le droit d’inviter un membre du Ceten ou toute
-			personne étrangère à l’association si celle-ci est susceptible de
-			l’aider. Tous les membres du BDE sont invités permanents des
-			réunions du club.
+			Le BDE est invité permanent des réunions du bureau. La présence de
+			membres du club ou de personnes extérieures au club est laissée à la
+			discrétion du président. Le BDE se réserve le droit de refuser la
+			présence en réunion d'une personne extérieure au Ceten.
 
 			La prise de décisions se fait à la majorité absolue des voix
 			exprimées. En cas d’égalité, la voix du président est prépondérante.
@@ -257,13 +274,14 @@
 			est annulée et doit être reconsidérée à la prochaine réunion du
 			club.
 
-			Chaque réunion fera l’objet d’un compte-rendu qui sera archivé par
-			le bureau du club et transmis au BDE dans les trois jours suivant la
-			réunion.
+			Chaque réunion fera l’objet d’un compte-rendu qui sera archivé et
+			transmis à l'ensemble du bureau du club ainsi qu'au BDE dans les
+			cinq jours suivant la réunion.
 			
 		}
 
 		\section{Propriété du club}
+\label{sec:propriete}
 		
 		{\small
 		
@@ -289,47 +307,53 @@
 			
 		}
 
-		\section{Comptabilité}
-
-		{\small
-
-			Le président et le trésorier sont tenus responsables de la
-			comptabilité du club. Ils doivent veiller au respect des
-			budgets attribués par le BDE au début de l’année civile.
-			
-			Chaque club se doit de préparer un budget prévisionnel de
-			son activité. Il doit se faire avant l’établissement du budget
-			prévisionnel du Ceten de l’année à venir. Ce budget peut-
-			être nul si le club ne prévoit aucune dépense et aucune
-			recette durant l’année. Il y précisera les subventions
-			demandées au BDE et les recettes reversées à l’association.
-			Le budget prévisionnel de chaque club doit être
-			nécessairement équilibré.
-			
-			Une réunion avec l’ensemble des clubs et le BDE est
-			organisée chaque année pour répartir et valider l’ensemble
-			des subventions attribuées à chacun des clubs.
-			
-			À la fin de son mandat, le club devra présenter un budget
-			final (y détaillant l’ensemble des dépenses et recettes du
-			club), pour pouvoir l’inclure à celui du Ceten.
-
-			L’état des dépenses et recettes du club doit être géré par le
-			trésorier du club. Il tient informé régulièrement le trésorier
-			du BDE des flux d’argent au sein du club. L’utilisation d’un
-			échéancier est encouragé pour savoir quelles recettes et
-			dépenses ont été réellement faites. Chaque mouvement doit
-			être justifié par une pièce comptable (factures, etc.). Toutes
-			ces pièces comptables devront être archivées au sein du
-			local du club, ou au BDE si le club ne possède pas de local.
-			De plus, une copie numérique de ces pièces doit être
-			transmise au BDE\@.
-
-		}
+		\section{Présidence}
+\label{sec:presidence}
 
 		\section{Trésorerie}
+\label{sec:tresorerie}
 
 		{\small
+		
+			L’état des dépenses et recettes du club doit être géré par le
+			trésorier du club. Il tient informé régulièrement le trésorier du
+			BDE des flux d’argent au sein du club. L’utilisation d’un échéancier
+			est encouragé pour savoir quelles recettes et dépenses ont été
+			réellement faites. Chaque mouvement doit être justifié par une pièce
+			comptable (factures, etc.). Toutes ces pièces comptables devront
+			être archivées au sein du local du club, ou au BDE si le club ne
+			possède pas de local. De plus, une copie numérique de ces pièces
+			doit être transmise au BDE\@.
+
+			Le président et le trésorier sont tenus responsables de la
+			comptabilité du club. Ils doivent veiller au respect des budgets
+			attribués par le BDE au début de l’année civile et doivent présenter
+			un budget final, ainsi qu’un budget prévisionnel pour leur mandat ou
+			le mandat suivant (selon mois de passation). Il convient de préciser
+			les subventions demandées au BDE\@. Ces documents seront envoyés
+			lors du mois de décembre au trésorier du BDE pour le bilan annuel et
+			la création du budget prévisionnel du CETEN\@.
+
+			Le budget prévisionnel de chaque club doit être nécessairement
+			équilibré, sauf accord du trésorier du BDE\@.
+
+			Toute transaction nécessitant l’utilisation du compte bancaire du
+			BDE (paiement sur internet, émission ou encaissement d’un chèque,
+			etc.) ne peut être faite que par le trésorier du BDE\@ ou avec
+			l'accord de celui-ci, et sous les conditions qu'il estime
+			nécessaires le cas échéant. Tout manquement à ces conditions ou abus
+			de la part d'un membre du club pourra faire l'objet d'une sanction
+			prononcée par le BDE\@.
+
+			Un membre du club peut fournir une avance pour un achat du club. Le
+			remboursement est validé et effectué par la trésorerie du BDE sous
+			présentation d’une facture justifiant la dépense occasionnée et par
+			la signature de la feuille de remboursement faites par le BDE\@. Le
+			trésorier du club doit informer le trésorier du BDE pour tout achat
+			que le club doit effectuer. La trésorerie du BDE et le président du
+			BDE se réservent le droit de refuser le remboursement un achat si
+			celui-ci n’est pas justifié. Toutes ces pièces comptables devront
+			être données à la trésorerie du BDE pour archivage.
 
 			Chaque club peut, s’il le souhaite, posséder une caisse
 			monnaie. Le trésorier doit tenir à jour un journal de caisse
@@ -337,30 +361,19 @@
 			club. Ce journal de caisse devra être remis en fin d’année au
 			trésorier du BDE\@.
 
-			Toute transaction nécessitant l’utilisation du compte
-			bancaire du BDE (paiement sur internet, émission ou
-			encaissement d’un chèque, etc.) doit obligatoirement être
-			faite par le trésorier du BDE\@. Néanmoins, le trésorier du club
-			indique dans sa comptabilité la dépense ou la recette
-			effectuée (même si celle-ci provient ou est perçue par le BDE
-			et non par le club).
-
-			Un membre du club peut fournir une avance pour un achat
-			du club. Le remboursement est validé et effectué par le BDE
-			sous présentation d’une facture justifiant la dépense
-			occasionnée et par la signature de la feuille de
-			remboursement fourni en annexe.
-
 		}
 
+		\section{Secrétariat}
+\label{sec:secretariat}
+
 		\section{Représentation du Ceten}
+\label{sec:representation}
 
 		{\small
 
-			Le club n’est en aucun cas une entité morale. Elle
-			représente uniquement le Ceten pour l’activité décrite en
-			objet de la charte et ne peut s’accorder d’aucune
-			responsabilité de l’association.
+			Le club n’est en aucun cas une entité morale. Il représente
+			uniquement le Ceten pour l’activité décrite en objet de la charte et
+			ne peut s’octroyer aucune responsabilité de l’association.
 
 			Toute demande de sponsors, devis, accord, et autre contrat
 			écrit entre le club et une personne morale doit être
