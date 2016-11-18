@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Version LaTeX des statuts du Ceten tels que remaniés lors de l'assemblée
-%  générale du lundi 7 novembre 2016.
+%  générale du lundi 14 novembre 2016.
 %  En cas de problème à la compilation, n'hésitez pas à contacter Julien Déoux
 %  <julien.deoux@telecomnancy.net>.
 %
@@ -29,8 +29,8 @@
 \usepackage[usenames]{xcolor} 
 \definecolor{newCeten}{RGB}{130,11,95}
 \usepackage{multicol}
-\widowpenalties 1 10000
-\raggedbottom
+\widowpenalties1 10000
+\raggedbottom{}
 
 \usepackage{fontspec} 
 \setmainfont{Roboto Slab}
@@ -67,12 +67,12 @@
 		\begin{center}
 			\includegraphics[width=\textwidth]{images/ceten.png}\par
 			\vspace{3cm}
-			{\Huge \light Statuts}\par
+			{\Huge\light{} Statuts}\par
 			\vfill
 			{\large Cercle des Élèves de TELECOM Nancy}\par
-			{\large \light Association déclarée}
+			{\large\light{} Association déclarée}
 			\vfill
-			{\light 7 novembre 2016}\par
+			{\light{} 14 novembre 2016}\par
 		\end{center}
 	\end{titlepage}
 
@@ -90,16 +90,17 @@
 	\pagenumbering{arabic}
 
 	\section{Constitution et dénomination}
+\label{sec:consitution_et_denomination}
 		Il est fondé, depuis le 10 janvier 1991 entre les adhérents aux présents
 		statuts, une association à but non lucratif régie par la loi du 1\up{er}
 		Juillet 1901 et le décret du 16 août 1901, ayant pour titre “Cercle des
 		Élèves de TELECOM Nancy” et pour sigle “CETEN”.
 
 	\section{Objet et buts}
-	\label{sec:objet}
+\label{sec:objet_et_buts}
 		Cette association a pour objet d’aider les élèves adhérents, anciens
 		comme nouveaux, de TELECOM Nancy. Pour cela, elle se donne comme
-		principaux objectifs :
+		principaux objectifs:
 		\begin{itemize}
 			\item L’aide à la gestion de la vie extrascolaire en collaboration
 				avec les autres associations d'élèves de TELECOM Nancy, en
@@ -113,7 +114,8 @@
 		\end{itemize}
 
 	\section{Siège social}
-		Le siège social est fixé :
+\label{sec:siege_social}
+		Le siège social est fixé:
 		\begin{center}
 			TELECOM Nancy\\
 			193, Avenue Paul Muller\\
@@ -125,7 +127,7 @@
 		l’assemblée générale.
 
 	\section{Les caractères}
-	\label{sec:caracteres}
+\label{sec:les_caracteres}
 		L’association prône des valeurs apolitiques, asyndicales et
 		aconfessionnelles. Elle est ouverte à tout élève de TELECOM Nancy, ainsi
 		qu’à toute personne dont la demande d’adhésion a été acceptée par le
@@ -134,10 +136,13 @@
 		de condition physique.
 
 	\section{Durée de l’association}
+\label{sec:duree_de_l_association}
 		La durée de l’association est illimitée.
 
-	\section{Composition de l’association}
-		L’association se compose de :
+	\section{Composition de l'association}
+\label{sec:composition_de_l_association}
+	
+		L’association se compose de:
 		\begin{itemize}
 			\item Membres de fait
 			\item Membres bienfaiteurs
@@ -150,8 +155,12 @@
 		Toutes ces personnes sont des personnes physiques.
 
 	\section{Les membres}
+\label{sec:les_membres}
+	
 		\subsection{Admission et adhésion}
-			Pour faire partie de l'association, il faut :
+\label{sub:admission_et_adhesion}
+		
+			Pour faire partie de l'association, il faut:
 			\begin{itemize}
 				\item Dans le cas des membres adhérents, être ou avoir été élève
 					de TELECOM Nancy
@@ -165,9 +174,10 @@
 			aux intéressés.
 
 		\subsection{Les catégories de membres}
-		\label{ssec:categories}
+\label{sub:les_categories_de_membres}
 			\subsubsection{Les membres de fait}
-				Peut être membre de fait :
+\label{ssub:les_membres_de_fait}
+				Peut être membre de fait:
 				\begin{itemize}
 					\item Tout ancien membre adhérent
 					\item Tout membre actif d’une association étudiante en
@@ -185,11 +195,14 @@
 				vote aux assemblées générales.
 
 			\subsubsection{Les membres bienfaiteurs}
+\label{ssub:les_membres_bienfaiteurs}
 				Peut être membre bienfaiteur toute personne physique ayant fait
 				un don manuel à l’association sous réserve d’acceptation du
 				bureau des élèves.
 
 			\subsubsection{Les membres ponctuels}
+\label{ssub:les_membres_ponctuels}
+			
 				Peut être membre ponctuel toute personne physique souhaitant
 				participer à une manifestation ponctuelle ayant payé une
 				cotisation d’un montant défini par le bureau des élèves pour
@@ -198,6 +211,8 @@
 				manifestation.
 
 			\subsubsection{Les membres adhérents}
+\label{ssub:les_membres_adherents}
+			
 				Est membre adhérent, toute personne souhaitant profiter des
 				services et activités proposés par l’association qui s’est
 				acquittée de la cotisation fixée annuellement. Les membres
@@ -205,6 +220,8 @@
 				générales.
 
 			\subsubsection{Les membres extérieurs}
+\label{ssub:les_membres_exterieurs}
+			
 			% Ajoutés lors du mandat 2016, les membres extérieurs ont fait
 			% débat pour différentes raisons (équité, compatibilité avec l'objet
 			% de l'association...). Si vous lisez ceci parce que vous avez
@@ -224,8 +241,8 @@
 				de participation ni de vote aux assemblées générales.
 
 		\subsection{Perte de qualité de membre}
-		\label{ssec:perte_qualite_membre}
-			La qualité de membre se perd par :
+\label{sub:perte_de_qualite_de_membre}
+			La qualité de membre se perd par:
 			\begin{itemize}
 				\item Décès
 				\item Radiation prononcée par le bureau des élèves pour
@@ -245,15 +262,16 @@
 			pas avant l’année scolaire suivant son exclusion.
 
 	\section{Affiliation}
+\label{sec:affiliation}
 		La présente association peut adhérer à d’autres associations, unions ou
 		regroupements par décision du bureau des élèves tant que cette
 		affiliation n’entre pas en conflit avec le caractère et les objectifs de
-		l’association décrits dans les articles~\ref{sec:objet}
-		et~\ref{sec:caracteres} des présents statuts.
+		l’association décrits dans les articles~\ref{sec:objet_et_buts}
+		et~\ref{sec:les_caracteres} des présents statuts.
 
 	\section{Ressources et financement}
 		\subsection{Ressources}
-			Les ressources de l’association comprennent :
+			Les ressources de l’association comprennent:
 			\begin{itemize}
 				\item Le montant des cotisations
 				\item Les dons manuels
@@ -270,7 +288,7 @@
 			comptes de l’association.
 
 	\section{Organes souverains}
-		L’association est administrée par :
+		L’association est administrée par:
 		\begin{itemize}
 			\item L’assemblée générale
 			\item Le bureau des élèves
@@ -285,10 +303,10 @@
 				Les assemblées générales, ordinaire ou extraordinaire, peuvent
 				comprendre tous les membres de l’association ayant explicitement
 				droit de participation aux assemblées générales d'après la
-				section~\ref{ssec:categories}.
+				Section~\ref{sub:les_categories_de_membres}.
 
 			\subsubsection{Convocation et ordre du jour}
-			\label{sssec:convocation}
+\label{ssub:convocation_et_ordre_du_jour}
 				Quinze jours avant la date fixée par le bureau des élèves, les
 				membres de l’association sont convoqués par les soins du
 				secrétaire de l’association. La convocation se fait par courrier
@@ -348,15 +366,15 @@
 			Elle peut se réunir à la demande du bureau des élèves ou à la
 			demande de la moitié plus un des membres de l’association, sur
 			convocation du président de l’association, suivant les modalités
-			prévues dans l’article~\ref{sssec:convocation}.
+			prévues dans l’article~\ref{ssub:convocation_et_ordre_du_jour}.
 
 			\subsubsection{Quorum}
 				Dans le cas de l’assemblée générale extraordinaire, les
-				délibérations ne peuvent être validées que si la majorité plus
-				un des membres de l’association est présente ou représentée. Si
-				le quorum n’est pas atteint, une nouvelle assemblée générale
-				extraordinaire est convoquée dans un délai d’au moins 7 jours,
-				avec le même ordre du jour mais sans nécessité de quorum.
+				délibérations ne peuvent être validées que si au moins le tiers
+				des membres de l’association est représenté. Si le quorum n’est
+				pas atteint, une nouvelle assemblée générale extraordinaire est
+				convoquée dans un délai d’au moins 7 jours, avec le même ordre
+				du jour mais sans nécessité de quorum.
 
 				Un membre représentant le quorum de l’assemblée générale peut,
 				s’il le souhaite, soumettre au président de l’association un
@@ -372,7 +390,8 @@
 				bureau des élèves lors des réunions dudit bureau, sous condition
 				que cette modification soit constructive et non contraire au but
 				et au caractère de l’association, sauf si elle concerne
-				l'article~\ref{sec:objet} ou l'article~\ref{sec:caracteres}.
+				l'article~\ref{sec:objet_et_buts} ou
+				l'article~\ref{sec:les_caracteres}.
 
 				Toute modification des statuts doit être rédigée et envoyée aux
 				membres de l’association au plus tard en même temps que la
@@ -391,7 +410,7 @@
 				ou à la sous-préfecture du siège social.
 
 		\subsection{Le bureau des élèves}
-		\label{ssec:bde}
+\label{sub:le_bureau_des_eleves}
 			\subsubsection{Fonction}
 				Le bureau des élèves (BDE) est l'organe exécutif de
 				l'association, il est placé sous la direction du président. Il
@@ -405,7 +424,7 @@
 				élus pour un mandat d’un an, débutant le 1\up{er} janvier et
 				finissant le 31 décembre. Dans les deux semaines suivant son
 				élection, le nouveau bureau des élèves doit se réunir afin
-				d'attribuer les postes suivants :
+				d'attribuer les postes suivants:
 				\begin{itemize}
 					\item Un Président, élève de deuxième année
 					\item Un Vice-président, élève de première année
@@ -419,7 +438,7 @@
 
 				Le cumul des postes énumérés ci-dessus est interdit.
 
-				En plus de ces 10 élèves :
+				En plus de ces 10 élèves:
 				\begin{itemize}
 					\item est choisi en la personne du président sortant un
 						représentant des troisième année. Dans le cas où le
@@ -453,7 +472,7 @@
 				plus d’un mandat de représentation.
 
 			\subsubsection{Pouvoirs}
-				Le bureau des élèves :
+				Le bureau des élèves:
 				\begin{itemize}
 					\item Peut autoriser tout acte ou opération qui n’est pas
 					    statutairement de la compétence de l’assemblée générale
@@ -478,8 +497,9 @@
 						poursuite de son objet.
 				\end{itemize}
 
-			\subsubsection{Modalité des élections du bureau des élèves}
-			\label{sssec:elections}
+			\subsubsection{Modalités des élections du bureau des élèves}
+\label{ssub:modalites_des_elections_du_bureau_des_eleves}
+			
 				L’élection se fait exclusivement à bulletin secret. Le vote par
 				procuration est admis dans la limite d’une procuration par
 				personne. Elle doit être datée et signée, rédigée sur les
@@ -493,7 +513,7 @@
 				Dans le cas où il y a une ou deux listes, seul un tour est
 				nécessaire. Pour que les bulletins soient déclarés recevables,
 				on effectue alors un scrutin plurinominal majoritaire à un tour
-				avec panachage dont le détail du fonctionnement est le suivant :
+				avec panachage dont le détail du fonctionnement est le suivant:
 
 				\begin{adjustwidth}{1cm}{}
 					Sont élus les cinq premiers candidats de première année et
@@ -511,7 +531,7 @@
 				Dans le cas où il y a plus de deux listes, pour que les
 				bulletins soient déclarés recevables, on effectue alors un
 				scrutin plurinominal majoritaire à deux tours avec panachage
-				dont le détail du fonctionnement est le suivant :
+				dont le détail du fonctionnement est le suivant:
 
 				\begin{adjustwidth}{1cm}{}
 				Sont élus au premier tour dans l’ordre décroissant des voix les
@@ -586,8 +606,8 @@
 
 	\vspace*{5cm}
 	\begin{center}
-		{\large\light Les présents statuts ont été votés lors de l’assemblée
-		générale extraordinaire à Villers-lès-Nancy le lundi 7 novembre 2016.}
+		{\large\light{} Les présents statuts ont été votés lors de l’assemblée
+		générale extraordinaire à Villers-lès-Nancy le lundi 14 novembre 2016.}
 	\end{center}
     \vspace{3cm}
 	Signatures\par
