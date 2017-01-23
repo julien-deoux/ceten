@@ -20,6 +20,8 @@ Statuts, règlement intérieur et charte des clubs
     * setspace
     * changepage
     * xr
+    * booktabs
+    * float
 * Polices
     * Roboto
     * Roboto Slab (regular + light)
