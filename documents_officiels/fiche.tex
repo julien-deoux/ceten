@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                     %
+%                         Fiche de club                               %
+%                                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Auteur :
+%    Julien Déoux <julien.deoux@telecomnancy.net>
+%    
+%  Licence :
+%    CC-BY-NC 4.0 (http://creativecommons.org/licenses/by-nc/4.0)
+%
+%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%  Configuration  %
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+\usepackage[francais]{babel}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[usenames]{xcolor}
+\definecolor{newCeten}{RGB}{130,11,95}
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{multicol}
+\usepackage{setspace}
+
+\usepackage{fontspec} 
+\setmainfont{Roboto Slab}
+\setsansfont{Roboto}
+\newfontfamily\condensed{Roboto Condensed}
+\newfontfamily\condensedlight{Roboto Condensed Light}
+\newfontfamily\light{Roboto Slab Light}
+\titleformat*{\section}{\large\condensedlight\color{newCeten}}
+
+\title{Fiche de club}
+\author{Julien Déoux}
+\date\today
+
+%%%%%%%%%%%%%%
+%  Document  %
+%%%%%%%%%%%%%%
+
+\begin{document}
+
+	%---------------%
+	% Page de garde %
+	%---------------%
+	
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=\textwidth]{images/ceten.png}\par
+			\vspace{0.5cm}
+			{\Huge \light{} Fiche de club}\par
+			\vspace{1cm}
+		\end{center}
+		\begin{center}
+			club: \underline{\hspace{8cm}}
+			année: \underline{\hspace{1.5cm}}\\
+			\vspace{\baselineskip}
+			$\square$ création du club
+			\hspace{3cm}
+			$\square$ renouvellement du bureau du club\\
+			\vspace{\baselineskip}
+			\begin{spacing}{1.5}
+				président: \underline{\hspace{7cm}}\\
+				trésorier: \underline{\hspace{7cm}}\\
+				secrétaire: \underline{\hspace{7cm}}\\
+				référent de TELECOM Nancy: \underline{\hspace{7cm}}\\
+			\end{spacing}
+		\end{center}
+		type du club:
+		\begin{todolist}
+		\item club de services
+		\item club de loisirs
+		\item club évènementiel (Mois de passation:
+			\underline{\hspace{5cm}})
+		\end{todolist}
+		\vspace{\baselineskip}
+		objet du club:\\
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+		\hspace{\textwidth}\\
+		\underline{\hspace{\textwidth}}\\
+
+	\end{titlepage}
+
+	%------------%
+	% Signatures %
+	%------------%
+
+	Les signataires de ce document affirment avoir lu et approuver la charte des
+	clubs votée le mardi 31 janvier 2017 par le bureau des élèves du Ceten.
+
+	Fait en deux exemplaires à Villers-lès-Nancy le \underline{\hspace{5cm}}
+	\vfill
+
+	\begin{multicols}{2}
+		Le président du club \\
+		Le secrétaire du club 
+	\end{multicols}
+		\vspace*{4cm}
+	\begin{multicols}{2}
+		Le trésorier du club \\
+		Le référent de TELECOM Nancy 
+	\end{multicols}
+		\vspace*{4cm}
+	\begin{multicols}{2}
+		Le président du BDE \\
+		Le responsable des clubs du BDE 
+	\end{multicols}
+		\vspace*{4cm}
+
+\end{document}

@@ -12,6 +12,10 @@ charte:
 	xelatex charte
 	xelatex charte
 
+fiche:
+	xelatex fiche
+	xelatex fiche
+
 clean:
 	rm *.aux *.log *.toc *.out
 
