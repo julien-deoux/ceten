@@ -1,4 +1,4 @@
-all: statuts ri charte 
+all: statuts ri charte fiche
 
 statuts:
 	xelatex statuts
