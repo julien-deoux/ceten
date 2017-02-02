@@ -45,6 +45,10 @@ Générer la charte
 
     make charte
 
+Générer la fiche de club
+
+    make fiche
+
 En cas de problème à la compilation n'hésiter pas à contacter Google ou Julien Déoux (<julien.deoux@telecomnancy.net>).
 
 ## Contributeurs
