@@ -57,3 +57,5 @@ En cas de problème à la compilation n'hésiter pas à contacter Google ou Juli
 * Kilian Cuny - <kilian.cuny@telecomnancy.net>
 * Julien Déoux - <julien.deoux@telecomnancy.net>
 * Yoni Lévy - <yoni.levy@telecomnancy.net>
+* Victor Cholley-Barroyer - <victor.cholley-barroyer@telecomnancy.net>
+
